@@ -12,7 +12,7 @@
 <header class="cd-header">
 		<div class="header-wrapper">
 			<div class="logo-wrap">
-				<a href="index.html" class="hover-target"><span>Inga</span>&<span>Mari</span></a>
+				<a href="{% url 'index' %}" class="hover-target"><span>Inga</span>&<span>Mari</span></a>
 			</div>
 			<div class="nav-but-wrap hover-target">
 				<div class="menu-icon hover-target">
@@ -27,17 +27,17 @@
 	<div class="nav">
 		<div class="nav__content">
 			<ul class="nav__list">
-				<li class="nav__list-item"><a href="feet.html" class="hover-target">Стопы</a></li>
-				<li class="nav__list-item"><a href="massage.html" class="hover-target">МФР</a></li>
-				<li class="nav__list-item"><a href="breath.html" class="hover-target">Дыхание</a></li>
-				<li class="nav__list-item"><a href="taz.html" class="hover-target">Таз</a></li>
-				<li class="nav__list-item"><a href="tazbott.html" class="hover-target">Тазовое дно</a></li>
-				<li class="nav__list-item"><a href="butt.html" class="hover-target">Ягодицы</a></li>
-				<li class="nav__list-item"><a href="spine.html" class="hover-target">Силовые на <br>спину</a></li>
-				<li class="nav__list-item"><a href="posture.html" class="hover-target">Осанка</a></li>
-				<li class="nav__list-item"><a href="exercise.html" class="hover-target">Зарядка</a></li>
-				<li class="nav__list-item"><a href="fulltrain.html" class="hover-target">Полные тренировки</a></li>
-				<li class="nav__list-item"><a href="pill.html" class="hover-target">Волшебная таблетка</a></li>
+				<li class="nav__list-item"><a href="{% url 'feet' %}" class="hover-target">Стопы</a></li>
+				<li class="nav__list-item"><a href="{% url 'massage' %}" class="hover-target">МФР</a></li>
+				<li class="nav__list-item"><a href="{% url 'breath' %}" class="hover-target">Дыхание</a></li>
+				<li class="nav__list-item"><a href="{% url 'taz' %}" class="hover-target">Таз</a></li>
+				<li class="nav__list-item"><a href="{% url 'tazbott' %}" class="hover-target">Тазовое дно</a></li>
+				<li class="nav__list-item"><a href="{% url 'butt' %}" class="hover-target">Ягодицы</a></li>
+				<li class="nav__list-item"><a href="{% url 'spine' %}" class="hover-target">Силовые на <br>спину</a></li>
+				<li class="nav__list-item"><a href="{% url 'posture' %}" class="hover-target">Осанка</a></li>
+				<li class="nav__list-item"><a href="{% url 'exercise' %}" class="hover-target">Зарядка</a></li>
+				<li class="nav__list-item"><a href="{% url 'fulltrain' %}" class="hover-target">Полные тренировки</a></li>
+				<li class="nav__list-item"><a href="{% url 'pill' %}" class="hover-target">Волшебная таблетка</a></li>
 			</ul>
 			<div class="switch-wraper hover-target">
 				<div id="switch" class="hover-target">
@@ -51,77 +51,77 @@
 		<div class="content">
 		<div class="wrapper">
 			<div class="box zoom-in">
-				<a href="feet.html" class="hover-target"><img src="https://source.unsplash.com/900x900/?feet" href="feet.html" alt="Стопы"></a>
+				<a href="{% url 'feet' %}" class="hover-target"><img src="https://source.unsplash.com/900x900/?feet" href="{% url 'feet' %}" alt="Стопы"></a>
 			  <h2>Стопы</h2>
 			  <p><b>2</b> Урока</p>
 			</div>
 		  </div>
 		  <div class="wrapper">
 			<div class="box zoom-in">
-				<a href="massage.html" class="hover-target"><img src="https://source.unsplash.com/900x900/?massage" alt="МФР"></a>
+				<a href="{% url 'massage' %}" class="hover-target"><img src="https://source.unsplash.com/900x900/?massage" href="{% url 'massage' %}" alt="МФР"></a>
 			  <h2>МФР</h2>
 			  <p><b>2</b> Урока</p>
 			</div>
 		  </div>
 		  <div class="wrapper">
 			<div class="box zoom-in">
-				<a href="breath.html" class="hover-target"><img src="https://source.unsplash.com/900x900/?medidate" alt="Дыхание"></a>
+				<a href="{% url 'breath' %}" class="hover-target"><img src="https://source.unsplash.com/900x900/?medidate" href="{% url 'breath' %}" alt="Дыхание"></a>
 			  <h2>Дыхание</h2>
 			  <p><b>12</b> Уроков</p>
 			</div>
 		  </div>
 		  <div class="wrapper">
 			<div class="box zoom-in">
-				<a href="taz.html" class="hover-target"><img src="https://source.unsplash.com/900x900/?pelvis" alt="Таз"></a>
+				<a href="{% url 'taz' %}" class="hover-target"><img src="https://source.unsplash.com/900x900/?pelvis" href="{% url 'taz' %}" alt="Таз"></a>
 			  <h2>Таз</h2>
 			  <p><b>10</b> Уроков</p>
 			</div>
 		  </div>
 		  <div class="wrapper">
 			<div class="box zoom-in">
-				<a href="tazbott.html" class="hover-target"><img src="https://source.unsplash.com/900x900/?pelvis" alt="Тазовое дно"></a>
+				<a href="{% url 'tazbott' %}" class="hover-target"><img src="https://source.unsplash.com/900x900/?pelvis" href="{% url 'tazbott' %}" alt="Тазовое дно"></a>
 			  <h2>Тазовое дно</h2>
 			  <p><b>10</b> Уроков</p>
 			</div>
 		  </div>
 		  <div class="wrapper">
 			<div class="box zoom-in">
-				<a href="butt.html" class="hover-target"><img src="https://source.unsplash.com/900x900/?buttocks" alt="Ягодицы"></a>
+				<a href="{% url 'butt' %}" class="hover-target"><img src="https://source.unsplash.com/900x900/?buttocks" href="{% url 'butt' %}" alt="Ягодицы"></a>
 			  <h2>Ягодицы</h2>
 			  <p><b>7</b> Уроков</p>
 			</div>
 		  </div>
 		  <div class="wrapper">
 			<div class="box zoom-in">
-				<a href="spine.html" class="hover-target"><img src="https://source.unsplash.com/900x900/?back,training" alt="Силовые на спину"></a>
+				<a href="{% url 'spine' %}" class="hover-target"><img src="https://source.unsplash.com/900x900/?back,training" href="{% url 'spine' %}" alt="Силовые на спину"></a>
 			  <h2>Силовые на спину</h2>
 			  <p><b>7</b> Уроков</p>
 			</div>
 		  </div>
 		  <div class="wrapper">
 			<div class="box zoom-in">
-				<a href="posture.html" class="hover-target"><img src="https://source.unsplash.com/900x900/?posture" alt="Postcards From Italy"></a>
+				<a href="{% url 'posture' %}" class="hover-target"><img src="https://source.unsplash.com/900x900/?posture" href="{% url 'posture' %}" alt="Postcards From Italy"></a>
 			  <h2>Осанка</h2>
 			  <p><b>8</b> Уроков</p>
 			</div>
 		  </div>
 		  <div class="wrapper">
 			<div class="box zoom-in">
-				<a href="exercise.html" class="hover-target"><img src="https://source.unsplash.com/900x900/?exercise" alt="Зарядка"></a>
+				<a href="{% url 'exercise' %}" class="hover-target"><img src="https://source.unsplash.com/900x900/?exercise" href="{% url 'exercise' %}" alt="Зарядка"></a>
 			  <h2>Зарядка</h2>
 			  <p><b>7</b> Уроков</p>
 			</div>
 		  </div>
 		  <div class="wrapper">
 			<div class="box zoom-in">
-				<a href="fulltrain.html" class="hover-target"><img src="https://source.unsplash.com/900x900/?full,training" alt="Полные тренировки"></a>
+				<a href="{% url 'fulltrain' %}" class="hover-target"><img src="https://source.unsplash.com/900x900/?full,training" href="{% url 'fulltrain' %}" alt="Полные тренировки"></a>
 			  <h2>Полные тренировки</h2>
 			  <p><b>9</b> Уроков</p>
 			</div>
 		  </div>
 		  <div class="wrapper">
 			<div class="box zoom-in">
-				<a href="pill.html" class="hover-target"><img src="https://source.unsplash.com/900x900/?pill" alt="Волшебная таблетка"></a>
+				<a href="{% url 'pill' %}" class="hover-target"><img src="https://source.unsplash.com/900x900/?pill" href="{% url 'pill' %}" alt="Волшебная таблетка"></a>
 			  <h2>Волшебная таблетка</h2>
 			  <p><b>9</b> Уроков</p>
 			</div>

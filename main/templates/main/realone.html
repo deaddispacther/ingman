@@ -1,0 +1,76 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title>Главная - IngMa</title>
+  <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.3/css/bootstrap.min.css'><link rel="stylesheet" href="{% static 'main/style.css' %}">
+
+</head>
+<body>
+<!-- partial:index.partial.html -->
+<header class="cd-header">
+		<div class="header-wrapper">
+			<div class="logo-wrap">
+				<a href="{% url 'index' %}" class="hover-target"><span>Inga</span>&<span>Mari</span></a>
+			</div>
+			<div class="nav-but-wrap hover-target">
+				<div class="menu-icon hover-target">
+					<span class="menu-icon__line menu-icon__line-left"></span>
+					<span class="menu-icon__line"></span>
+					<span class="menu-icon__line menu-icon__line-right"></span>
+				</div>					
+			</div>					
+		</div>				
+	</header>
+
+	<div class="nav">
+		<div class="nav__content">
+			<ul class="nav__list">
+				<li class="nav__list-item"><a href="{% url 'feet' %}" class="hover-target">Стопы</a></li>
+				<li class="nav__list-item"><a href="{% url 'massage' %}" class="hover-target">МФР</a></li>
+				<li class="nav__list-item"><a href="{% url 'breath' %}" class="hover-target">Дыхание</a></li>
+				<li class="nav__list-item"><a href="{% url 'taz' %}" class="hover-target">Таз</a></li>
+				<li class="nav__list-item"><a href="{% url 'tazbott' %}" class="hover-target">Тазовое дно</a></li>
+				<li class="nav__list-item"><a href="{% url 'butt' %}" class="hover-target">Ягодицы</a></li>
+				<li class="nav__list-item"><a href="{% url 'spine' %}" class="hover-target">Силовые на <br>спину</a></li>
+				<li class="nav__list-item"><a href="{% url 'posture' %}" class="hover-target">Осанка</a></li>
+				<li class="nav__list-item"><a href="{% url 'exercise' %}" class="hover-target">Зарядка</a></li>
+				<li class="nav__list-item"><a href="{% url 'fulltrain' %}" class="hover-target">Полные тренировки</a></li>
+				<li class="nav__list-item"><a href="{% url 'pill' %}" class="hover-target">Волшебная таблетка</a></li>
+			</ul>
+			<div class="switch-wraper hover-target">
+				<div id="switch" class="hover-target">
+					<div id="circle"></div>
+				</div>
+			  </div>
+		</div>
+	</div>		
+	{% block content %}
+	<div class="container">
+	      {% for url in videos %}
+		     {% if url.tag == request.resolver_match.url_name %}
+			 <div class="content">
+			   <div class="wrapper">
+				<iframe width="640" height="360" frameborder="0" src="{{ url.txt }}" allowfullscreen ></iframe>
+			</div>
+		</div>
+			{% endif %}
+			{% endfor %}
+	</div>
+
+	{% endblock content %}
+	
+	<div class='cursor' id="cursor"></div>
+	<div class='cursor2' id="cursor2"></div>
+	<div class='cursor3' id="cursor3"></div>
+
+<!-- Link to page
+================================================== -->
+
+<a href="https://t.me/deaddispatcher" class="link-to-portfolio hover-target" target=”_blank”></a>
+<!-- partial -->
+  <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js'></script><script  src="{% static 'main/script.js' %}"></script>
+
+</body>
+</html>
